@@ -34,15 +34,16 @@ main() {
         print("Thank you For Using Our Application Let Us See You Again :)");
         break;
     }
-    //if the choice of the user is not and exit
+    //if the choice of the user is not exit
     if(choice.toLowerCase()!='exit'){
       //ask the user if he want to play again or to quit
       print("Do You Want To Play Again ? Y/N");
       yn=stdin.readLineSync();
+      //if the user tell that he dont want to play again
       if(yn.toLowerCase()=="n"){
         print("Thank you For Using Our Application Let Us See You Again :)");
       }
     }
-    //break the loop if you get a yes or exit
+    //break the loop if you get a no or exit
   }while(choice.toLowerCase()!='exit'&& yn.toLowerCase()!='n');
 }
